@@ -1,0 +1,91 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Center the card */
+.analytics-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+/* Main card */
+.analytics-card {
+  background-color: #fff;
+  width: 100%;
+  max-width: 1000px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings */
+.analytics-card h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: #000;
+}
+
+/* Metrics Grid */
+.metrics-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.metric-item {
+  flex: 1;
+  min-width: 200px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.metric-item strong {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.metric-value {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Charts Layout */
+.charts-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.chart-item {
+  flex: 1;
+  min-width: 300px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.chart-item strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}

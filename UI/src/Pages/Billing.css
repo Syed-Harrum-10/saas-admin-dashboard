@@ -1,0 +1,151 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Wrapper to center */
+.billing-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+/* Main card */
+.billing-card {
+  background-color: #fff;
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings */
+.billing-card h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: #000;
+}
+
+.billing-section {
+  margin-bottom: 30px;
+}
+
+.billing-section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+/* Info Row */
+.billing-info-row {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.label {
+  font-weight: 600;
+  color: #444;
+}
+
+.value {
+  font-weight: 500;
+  color: #222;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 30px 0;
+}
+
+/* Payment History Table */
+.payment-history-table {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.table-header {
+  display: flex;
+  background-color: #f1f1f1;
+  font-weight: 600;
+  padding: 12px 16px;
+}
+
+.table-row {
+  display: flex;
+  padding: 12px 16px;
+  border-top: 1px solid #eee;
+}
+
+.header-cell,
+.table-cell {
+  flex: 1;
+  font-size: 14px;
+}
+.plan-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.plan-box .label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.plan-box .plan-name {
+  font-size: 24px;
+  font-weight: 800;
+  color: #000;
+}
+.upgrade-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+.upgrade-btn:hover {
+  background-color: #45a049;
+}
+
+.upgrade-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+

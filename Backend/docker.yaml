@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+
+  mongo:
+    image: mongo:6
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  auth-service:
+    build: ./auth-service
+    container_name: auth-service
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - MONGO_URI=mongodb://mongo:27017/authdb
+    depends_on:
+      - mongo
+
+  user-service:
+    build: ./user-service
+    container_name: user-service
+    ports:
+      - "5001:5001"
+    environment:
+      - PORT=5001
+      - MONGO_URI=mongodb://mongo:27017/userdb
+    depends_on:
+      - mongo
+
+  billing-service:
+    build: ./billing-service
+    container_name: billing-service
+    ports:
+      - "5002:5002"
+    environment:
+      - PORT=5002
+      - MONGO_URI=mongodb://mongo:27017/billingdb
+    depends_on:
+      - mongo
+
+  analyst-service:
+    build: ./analyst-service
+    container_name: analyst-service
+    ports:
+      - "5003:5003"
+    environment:
+      - PORT=5003
+      - MONGO_URI=mongodb://mongo:27017/analystdb
+    depends_on:
+      - mongo
+
+volumes:
+  mongo-data:

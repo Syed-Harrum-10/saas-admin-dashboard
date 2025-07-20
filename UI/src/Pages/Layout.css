@@ -1,0 +1,123 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f6f6f6;
+}
+
+/* Main layout */
+.layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.sidebar-nav a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Topbar */
+.topbar {
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.main-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Page content */
+.content {
+  padding: 20px;
+  overflow-y: auto;
+}
+.sidebar-nav ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  padding: 10px 12px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.sidebar-nav li a:hover {
+  background-color: #f0f0f0;
+}
+.topbar {
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.account-icon img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.logout-btn {
+  padding: 8px 12px;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #d9363e;
+}

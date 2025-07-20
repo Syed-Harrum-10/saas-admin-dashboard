@@ -1,0 +1,79 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Outer wrapper to center vertically */
+.user-management-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9fafb;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Main container */
+.user-management-container {
+  width: 100%;
+  max-width: 800px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+.user-management-header {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.user-management-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* Search box */
+.search-input {
+  padding: 10px 12px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* Table section */
+.account-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+}
+
+.user-table-wrapper {
+  overflow-x: auto;
+}
+
+.user-table {
+  width: 100%;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px;
+  border: 1px solid #000;
+  text-align: left;
+  color: #2c3442;
+}
+
+.user-table td:last-child {
+  font-weight: 600;
+}
